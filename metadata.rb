@@ -17,3 +17,7 @@ version '0.1.0'
 # a Supermarket.
 #
 # source_url 'https://github.com/<insert_org_here>/citius_deployslave' if respond_to?(:source_url)
+
+depends 'java', '~> 1.47.0'
+depends 'citius_jenkins', '~> 0.1.4'
+depends 'tomcat', '~> 2.3.4'
