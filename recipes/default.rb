@@ -6,6 +6,7 @@
 
 include_recipe 'java'
 include_recipe 'citius_jenkins::install_slave'
+include_recipe 'citius_deployslave::configure_iptables'
 
 tomcat_install 'CalculatorApplication' do
   version '8.0.36'
