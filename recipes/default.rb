@@ -12,6 +12,13 @@ tomcat_install 'CalculatorApplication' do
   version '8.0.36'
 end
 
+if node['platform'] == 'rhel' || node['platform'] == 'redhat' || node['platform'] == 'centos'
+  cron 'schedule_chef_client' do  
+    minute '30'
+    command 'chef-client'
+  end
+end
+
 tag('slave')
 ruby_block 'set `slave_labels` node attributes to deploy-server' do
   block do

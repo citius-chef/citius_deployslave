@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'all_rights'
 description 'Installs/Configures citius_deployslave'
 long_description 'Installs/Configures citius_deployslave'
-version '0.1.0'
+version '0.1.1'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
@@ -21,3 +21,4 @@ version '0.1.0'
 depends 'java', '~> 1.47.0'
 depends 'citius_jenkins', '~> 0.1.4'
 depends 'tomcat', '~> 2.3.4'
+depends 'iptables', '~> 3.1.0'
